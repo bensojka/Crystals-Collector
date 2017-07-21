@@ -3,38 +3,69 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>The Psychic Game</title>
+  <title>Crystals Collector</title>
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
 
-  <header>
-
-    <h1>The Psychic Game</h1>
-
-  </header>
-
-  <div class="instructions">
-
-    <p>Guess what letter I'm thinking of</p>
+  <div class="container">
+    <div class="row vertical-center">
+      <div class="text-center col-sm-6" id="box-1">
+        <h1 id="title-top">Crystals Collector!</h1>
+      </div>
+    </div>
+    <div class="row vertical-center">
+      <div class="col-sm-6" id="box-2">
+        <div id="instructions">
+          <p>You will be given a random number at the start of the game.</p>
+          <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+          <p>You win the game by matching your total score to random number. You lose the game if your total score goes above the random number.</p>
+          <p>The value of each crystal is hidden from you until you click on it.</p>
+          <p>Each time when the game starts, the game will change the values of each crystal.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row vertical-center">
+      <div class="col-sm-3">
+        <div class="row vertical-center" id="box-3">
+          <div id="scoreboard">
+            <h2 id="score-wins">Wins: 0</h2>
+            <h2 id="score-losses">Losses: 0</h2>
+          </div>
+        </div>    
+        <div class="row vertical-center" id="box-4">
+          <div id="random-number">
+            <h3 id="score-to-match">Match this score: </h3>
+          </div>
+        </div>
+        <div class="row vertical-center" id="box-5">
+          <h3 id="player-score">Your score is: 0</h3>
+        </div>
+      </div>
+      <div class="text-center col-sm-3">
+        <div class="row vertical-center" id="box-6">
+          <div id="crystal-images">
+            <div class="row vertical-center" id="crystal-row-1">
+              <img src="assets/images/green-crystal.png" alt="" class="crystal-photo" id="green-crystal">
+              <img src="assets/images/red-crystal.png" alt="" class="crystal-photo" id="red-crystal">
+            </div>>
+            <div class="row vertical-center" id="crystal-row-2">
+              <img src="assets/images/yellow-crystal.png" alt="" class="crystal-photo" id="yellow-crystal">
+              <img src="assets/images/blue-crystal.png" alt="" class="crystal-photo" id="blue-crystal">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </div>
 
-  <div class="game">
 
-    <p id="wins">Wins</p>
-
-    <p id="losses">Losses</p>
-
-    <p id="remaining">Guesses Left</p>
-
-    <p id="myGuesses">Your guesses so far</p>
-
-  </div>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </body>
