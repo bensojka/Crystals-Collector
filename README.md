@@ -1,4 +1,4 @@
-# Crystals Collector https://bensojka.github.io/Crystals-Collector/
+# CRYSTALS COLLECTOR https://bensojka.github.io/Crystals-Collector/
 
 This Crystals Collector game dynamically updates HTML with the jQuery library.
 
